@@ -2,9 +2,8 @@
   <header>
     <img src="https://villageidiotblog.files.wordpress.com/2013/08/villageidiot_sign.jpg" alt="placeholder">
     <nav>
-      <a href="#">Home</a>
-      <a href="#">Events</a>
-      <a href="#">About</a>
+      <router-link to="/">Home</router-link>
+      <router-link to="/about">About</router-link>
       <a href="#">Login</a>
     </nav>
   </header>
