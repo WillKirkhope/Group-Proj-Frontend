@@ -22,13 +22,17 @@
 <style scoped>
   header {
     display: flex;
+    box-sizing:border-box;
     justify-content: space-between;
     background-color: beige;
-    height: 20vw;
-    width: 100vw;
+    width: 100%;
+    padding: 0 10vw;
+  }
+  a {
+    padding:.5vw;
   }
   img {
-    width: 40vw;
-    height: auto;
+    height: 8vw;
+    padding: 2vw;
   }
 </style>

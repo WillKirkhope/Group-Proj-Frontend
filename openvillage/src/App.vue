@@ -33,10 +33,15 @@ export default {
   },
   methods: {
     getData(){
-      fetch()
+      fetch('https://openvillage.herokuapp.com/events')
         .then(response => response.json())
-        .then(myData => this.events = myData )
+        .then(myData => this.events = myData.event)
+        
     }
+  },
+  mounted() {
+    this.getData()
+    console.log("Heres our fetch crap from database: ",this.events)
   }
 }
 </script>
@@ -49,6 +54,7 @@ export default {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items:center;
 }
 
 </style>

@@ -1,11 +1,8 @@
 <template>
-  <div class="list">
-    <ul>
-      <li>Picking up Dog Shit</li>
-      <li>Picking up Cat Shit</li>
-      <li>Trash Clean up</li>
-      <li>Park Clean up</li>
-      <li>Feeding Homeless</li>
+  <div class = "event">
+    <ul class="list">
+      <EventsList v-for = "oneEvent in myEvents" :key = "oneEvent.id" v-bind:event = "oneEvent"/>
+      
     </ul>
     <button type="button" name="button">Create</button>
   </div>
@@ -13,10 +10,13 @@
 
 
 <script>
-
+import EventsList from "./EventsList"
 export default {
   name: 'Events',
-  props: ["myEvents"]
+  props: ["myEvents"],
+  components: {
+    EventsList
+  }
 }
 
 </script>
@@ -24,11 +24,22 @@ export default {
 
 <style>
 
+.event {
+  display:flex;
+  align-items:center;
+  flex-direction:column;
+  padding: 3vw 0;
+}
+
+.list {
+  width: 40vw;
+}
+
 button {
   font-family: monospace;
   height: 4vw;
-  width: 4vw;
-  border-radius: 25%;
+  width: 25vw;
+  border-radius: 5px;
 }
 
 </style>
