@@ -20,7 +20,7 @@
     justify-content: center;
     align-items: center;
     background-color: beige;
-    height: 20vw;
+    height: 5vw;
     width: 100vw;
   }
 
