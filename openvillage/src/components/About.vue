@@ -1,6 +1,6 @@
 <template>
   <div id="about">
-      <h1>ABOutTTTTTACO</h1>
+      <h1>About Open Village</h1>
   </div>
 </template>
 

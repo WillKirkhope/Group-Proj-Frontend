@@ -1,6 +1,6 @@
 <template>
   <div id="form">
-      <h1>taco</h1>
+      <h1></h1>
   </div>
 </template>
 
