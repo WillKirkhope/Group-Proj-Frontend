@@ -28,7 +28,7 @@
     align-items: center;
     width: 100%;
     padding: 0 10vw;
-    background-color: #ffb400;
+    background-color: #F17105;
     padding-top:5px;
     color: rgb(5,89,135);
   }
