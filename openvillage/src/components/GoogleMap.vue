@@ -32,8 +32,6 @@ export default {
   name: "GoogleMap",
   data() {
     return {
-      // default to Montreal to keep it simple
-      // change this to whatever makes sense
       center: { lat: 39.7392, lng: -104.9903 },
       markers: [],
       places: [],
@@ -42,10 +40,12 @@ export default {
   },
 
   props: ["myEvents"],
-
-  mounted() {
+  created(){
     this.geolocate();
+  },
+  mounted() {
     this.createMarkersPerEvent(this.myEvents)
+
   },
 
   methods: {
@@ -63,7 +63,6 @@ export default {
         this.places.push(this.currentPlace);
         this.center = marker;
         this.currentPlace = null;
-        console.log("clicked add, print markers",this.markers[0])
       }
     },
     geolocate: function() {
@@ -75,7 +74,6 @@ export default {
       });
     },
     createMarkersPerEvent(events) {
-      console.log('i am mappinggggg', events)
       events.map(event => {
         let positionObject = {}
         positionObject.position = {}
@@ -83,7 +81,6 @@ export default {
         positionObject.position.lng = event.long
         return this.markers.push(positionObject)
       })
-      console.log(this.markers)
     }
   }
 };

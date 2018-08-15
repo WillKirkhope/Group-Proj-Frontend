@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="main-comp">
-      <GoogleMap v-bind:myEvents="events"/>
+      <GoogleMap v-if='this.events' v-bind:myEvents="events"/>
       <Events v-bind:myEvents="events" />
     </div>
   </div>
@@ -20,7 +20,7 @@ export default {
   },
   data(){
     return {
-      events: []
+      events: null
     }
   },
   methods: {
