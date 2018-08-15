@@ -3,6 +3,14 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import * as VueGoogleMaps from "vue2-google-maps";
+
+Vue.use(VueGoogleMaps, {
+  load: {
+    key: "AIzaSyDEviSlWkNK9xyce6TmGNBlr0o6JE38f3I",
+    libraries: "places" // necessary for places input
+  }
+});
 
 Vue.config.productionTip = false
 
