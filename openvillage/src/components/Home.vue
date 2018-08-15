@@ -45,6 +45,8 @@ export default {
   flex-direction: row;
   justify-content: space-around;
   align-items:center;
+  background-color: rgb(228, 230, 234);
+  padding:50px;
 }
 
 </style>
