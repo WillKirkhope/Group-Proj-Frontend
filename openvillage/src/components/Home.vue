@@ -1,21 +1,21 @@
 <template>
   <div id="app">
     <div class="main-comp">
-      <MapVisual />
-      <Events v-bind:myEvents = "events" />
+      <GoogleMap v-bind:myEvents="events"/>
+      <Events v-bind:myEvents="events" />
     </div>
   </div>
 </template>
 
 
 <script>
-import MapVisual from './MapVisual'
 import Events from './Events'
+import GoogleMap from './GoogleMap'
 
 export default {
   name: 'App',
   components: {
-    MapVisual,
+    GoogleMap,
     Events
   },
   data(){
@@ -27,7 +27,7 @@ export default {
     getData(){
       fetch('https://openvillage.herokuapp.com/events')
         .then(response => response.json())
-        .then(myData => this.events = myData.event)  
+        .then(myData => this.events = myData.event)
     }
   },
   mounted() {
