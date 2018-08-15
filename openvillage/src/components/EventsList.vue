@@ -63,7 +63,7 @@ button {
   margin: 0;
   margin-bottom: 1vw;
   padding: .5vw .5vw;
-  /* cursor: pointer; */
+  cursor: pointer;
   border-radius: .25vw;
   border: 1px solid black;
   box-shadow: .25vw .25vw .125vw 0vw rgba(0,0,0,0.75);
