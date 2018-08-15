@@ -2,7 +2,6 @@
   <div class = "event">
     <ul class="list">
       <EventsList v-for = "oneEvent in myEvents" :key = "oneEvent.id" v-bind:event = "oneEvent"/>
-      
     </ul>
     <button type="button" name="button">Create</button>
   </div>
@@ -11,6 +10,7 @@
 
 <script>
 import EventsList from "./EventsList"
+
 export default {
   name: 'Events',
   props: ["myEvents"],
@@ -18,7 +18,6 @@ export default {
     EventsList
   }
 }
-
 </script>
 
 

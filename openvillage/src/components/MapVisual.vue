@@ -6,20 +6,17 @@
 
 
 <script>
-
 export default {
   name: 'MapVisual'
 }
-
 </script>
 
 
 <style>
 
-img{
+img {
   width: 30vw;
-  height: 30vw;
-  
+  height: 30vw
 }
 
 </style>
