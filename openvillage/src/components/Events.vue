@@ -4,7 +4,7 @@
     <ul class="list">
       <EventsList v-for = "oneEvent in myEvents" :key = "oneEvent.id" v-bind:event = "oneEvent"/>
     </ul>
-    <button type="button" name="button">Create New Event</button>
+    <router-link id = "create-button" to="/create">Create New Event</router-link>
   </div>
 </template>
 
@@ -36,7 +36,7 @@ export default {
   list-style-type: none;
 }
 
-button {
+#create-button {
   background-color:rgb(255, 177, 153);
   color: black;
   text-align: center;
