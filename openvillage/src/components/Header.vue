@@ -32,7 +32,7 @@
 
   .nav-links a {
     padding: .5vw;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Karla', sans-serif;
     
   }
 

@@ -3,7 +3,7 @@
     <ul class="list">
       <EventsList v-for = "oneEvent in myEvents" :key = "oneEvent.id" v-bind:event = "oneEvent"/>
     </ul>
-    <button type="button" name="button">Create</button>
+    <button type="button" name="button">Create New Event</button>
   </div>
 </template>
 
@@ -36,7 +36,6 @@ export default {
 }
 
 button {
-  font-family: monospace;
   height: 4vw;
   width: 25vw;
   border-radius: 5px;

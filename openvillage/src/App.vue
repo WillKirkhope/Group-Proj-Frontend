@@ -23,5 +23,9 @@ export default {
 
 <style>
 
+#app {
+  font-family: 'Karla', sans-serif;
+}
+
 
 </style>

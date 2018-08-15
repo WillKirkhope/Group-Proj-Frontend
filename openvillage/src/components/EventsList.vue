@@ -3,7 +3,7 @@
     <h2>{{event.name}}</h2>
     <p>{{event.description}}</p>
     <div class="moreButton">
-      <button>See More</button>
+      <button>Details</button>
     </div>
   </li>
 </template>
@@ -23,7 +23,7 @@ export default {
 li {
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color:rgb(232, 245, 252);
     color: black;
     text-align: center;
     text-decoration: none;
@@ -54,7 +54,7 @@ p {
 }
 
 button {
-  background-color:rgb(104, 191, 237);
+  background-color:rgb(255, 233, 179);
   color: black;
   text-align: center;
   text-decoration: none;
