@@ -16,10 +16,6 @@ export default {
 
 <style scoped>
 
-* {
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-}
-
 h2 {
   font-size: 1.5vw;
 }
