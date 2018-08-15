@@ -37,6 +37,7 @@
     padding: .5vw;
     color: rgb(5,89,135);
     text-decoration:none;
+
   }
 
   #logo-img {
