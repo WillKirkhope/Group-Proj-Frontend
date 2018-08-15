@@ -18,9 +18,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: beige;
+    background-color: #ffb400;
     height: 5vw;
-    width: 100vw;
+    width: 100%;
+    color: rgb(5,89,135);
   }
 
 </style>
