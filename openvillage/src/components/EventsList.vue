@@ -19,7 +19,6 @@ export default {
 
 <style scoped>
 
-
 li {
     display: flex;
     flex-direction: column;
