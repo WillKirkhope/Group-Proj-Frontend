@@ -21,7 +21,7 @@ export default {
 </script>
 
 
-<style>
+<style scoped>
 
 .event {
   display:flex;
@@ -32,6 +32,7 @@ export default {
 
 .list {
   width: 40vw;
+  list-style-type: none;
 }
 
 button {
