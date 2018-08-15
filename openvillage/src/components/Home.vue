@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <div class="main-comp">
-      <GoogleMap />
-      <Events v-bind:myEvents = "events" />
+      <GoogleMap v-bind:myEvents="events"/>
+      <Events v-bind:myEvents="events" />
     </div>
   </div>
 </template>

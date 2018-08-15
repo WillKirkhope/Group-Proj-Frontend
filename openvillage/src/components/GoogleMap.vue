@@ -14,7 +14,7 @@
     <br>
     <gmap-map
       :center="center"
-      :zoom="12"
+      :zoom="8"
       style="width:100%;  height: 400px;"
     >
       <gmap-marker
@@ -41,8 +41,11 @@ export default {
     };
   },
 
+  props: ["myEvents"],
+
   mounted() {
     this.geolocate();
+    this.createMarkersPerEvent(this.myEvents)
   },
 
   methods: {
@@ -60,6 +63,7 @@ export default {
         this.places.push(this.currentPlace);
         this.center = marker;
         this.currentPlace = null;
+        console.log("clicked add, print markers",this.markers[0])
       }
     },
     geolocate: function() {
@@ -69,6 +73,17 @@ export default {
           lng: position.coords.longitude
         };
       });
+    },
+    createMarkersPerEvent(events) {
+      console.log('i am mappinggggg', events)
+      events.map(event => {
+        let positionObject = {}
+        positionObject.position = {}
+        positionObject.position.lat = event.lat
+        positionObject.position.lng = event.long
+        return this.markers.push(positionObject)
+      })
+      console.log(this.markers)
     }
   }
 };
