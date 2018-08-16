@@ -5,7 +5,7 @@
     <p>{{event.description}}</p>
     </div>
     <div class="moreButton">
-      <button>Details</button>
+      <router-link id = "create-button" :to="`/events/${event.id}`">Details</router-link>
     </div>
   </li>
 </template>
