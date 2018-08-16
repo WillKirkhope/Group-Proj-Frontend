@@ -4,6 +4,7 @@ import Home from '@/components/Home'
 import About from '@/components/About'
 import Form from '@/components/Form'
 import PageNotFound from '@/components/PageNotFound'
+import EventById from '@/components/EventById'
 
 
 Vue.use(Router)
@@ -13,7 +14,7 @@ export default new Router({
     {
       path: '/',
       name: 'Home',
-      component: Home
+      component: Home      
     },
     {
       path: '/about',
@@ -24,6 +25,11 @@ export default new Router({
       path: '/create',
       name: 'Form',
       component: Form
+    },
+    {
+      path: '/events/:id',
+      name: 'EventById',
+      component: EventById
     },
     {
       path: '*',
