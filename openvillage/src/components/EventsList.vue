@@ -61,7 +61,7 @@ p {
   padding-left: 2vw;
 }
 
-button {
+#create-button {
   background-color:rgb(255, 233, 179);
   color: black;
   text-align: center;
