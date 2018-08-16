@@ -22,7 +22,7 @@ export default {
   fetch(`https://openvillage.herokuapp.com/events/${this.myEvents[0].id}`, {
     method: 'DELETE'
   })
-    .then(window.location.replace("https://openvillage-8d44b.firebaseapp.com/"))
+    // .then(window.location.replace("https://openvillage-8d44b.firebaseapp.com/"))
 }
 }
 }
