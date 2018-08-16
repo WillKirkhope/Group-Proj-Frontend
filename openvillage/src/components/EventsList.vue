@@ -1,7 +1,9 @@
 <template>
-  <li>
+  <li class="event-listitem">
+    <div>
     <h2>{{event.name}}</h2>
     <p>{{event.description}}</p>
+    </div>
     <div class="moreButton">
       <button>Details</button>
     </div>
@@ -21,7 +23,6 @@ export default {
 
 li {
     display: flex;
-    flex-direction: column;
     background-color:rgb(232, 245, 252);
     color: black;
     text-align: center;
@@ -31,7 +32,6 @@ li {
     margin: 0;
     margin-bottom: 1vw;
     padding: .5vw .5vw;
-    /* cursor: pointer; */
     border-radius: .25vw;
     border: 1px solid black;
     box-shadow: .06vw .06vw .06vw 0vw rgba(0,0,0,0.75);
@@ -46,10 +46,19 @@ p {
   font-size: 1vw;
 }
 
+.event-listitem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2vw;
+}
+
 .moreButton {
   display: flex;
   justify-content: flex-end;
   margin-right: 2vw;
+  height: 4vw;
+  padding-left: 2vw;
 }
 
 button {
