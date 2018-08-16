@@ -1,13 +1,20 @@
 <template>
-    <h1>This is the Event Page!</h1>
-
+  <div class="eventPage">
+  <div class="Event-by">
+    <EventCard v-if='this.event' v-bind:myEvents="event" />
+  </div>
+  </div>
 </template>
 
 <script>
+import EventCard from "./EventCard"
 
 
 export default {
     name: 'EventById',
+    components: {
+      EventCard
+    },
     data() {
         return {
             event: null,
@@ -37,5 +44,10 @@ export default {
 </script>
 
 <style>
+
+.eventPage {
+  background-color: rgb(228, 230, 234);
+  padding: 6vw;
+}
 
 </style>
