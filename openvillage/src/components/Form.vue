@@ -42,20 +42,13 @@ export default {
     }
   },
   methods: {
-    testFunction(){
-      console.log('hello from methods!')
-    },
-    mounted() {
-      this.testFunction()
-    },
     postNewEvent(){
-      console.log("i was submitted?",this.formData)
       fetch('https://openvillage.herokuapp.com/events', {
         method: 'POST',
         headers: { "content-type": "application/json" },
         body: JSON.stringify(this.formData)
       })
-        .then(window.location.replace("https://openvillage-8d44b.firebaseapp.com/"))
+        // .then(window.location.replace("https://openvillage-8d44b.firebaseapp.com/"))
     }
   }
 }
