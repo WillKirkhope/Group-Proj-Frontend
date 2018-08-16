@@ -28,12 +28,13 @@ export default {
   display:flex;
   align-items:center;
   flex-direction:column;
-  padding: 3vw 0;
 }
 
 .list {
   width: 40vw;
   list-style-type: none;
+  height: 30vw;
+  overflow: scroll;
 }
 
 #create-button {
@@ -43,7 +44,6 @@ export default {
   text-decoration: none;
   font-size: 1vw;
   font-weight: 500;
-  /* width: 35vw; */
   margin: 0;
   margin-left: 2.5vw;
   padding: .5vw .5vw;
