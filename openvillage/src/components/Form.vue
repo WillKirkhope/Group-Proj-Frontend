@@ -55,7 +55,7 @@ export default {
         headers: { "content-type": "application/json" },
         body: JSON.stringify(this.formData)
       })
-        .then(window.location.replace("http://localhost:8080/#/").reload)
+        .then(window.location.replace("https://openvillage-8d44b.firebaseapp.com/"))
     }
   }
 }
