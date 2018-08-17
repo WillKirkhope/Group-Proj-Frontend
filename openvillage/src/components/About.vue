@@ -41,21 +41,26 @@ export default {
 <style>
 
 h2 {
-  padding-left: 2vw;
   font-size:3vw;
+  margin-right: 2vw;
 }
 
 img {
 height:25vh;
 width: 21vw;
 padding-right:2vw;
+margin-left: 3vw;
 }
 
 p {
-  padding-left:2vw;
+  padding: 0 2vw;
 }
 
-#about h1 {
+#about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding-left:2vw;
 }
 
