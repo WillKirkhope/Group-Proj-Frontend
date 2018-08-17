@@ -37,11 +37,13 @@ li {
 #member-image {
 height:25vh;
 width: 21vw;
+margin-left: 3vw;
 padding-right:2vw;
 }
 
 #member-name {
 font-size: 2.5vw;
+margin-left: 3.5vw;
 list-style-type:none;
 }
 
